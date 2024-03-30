@@ -33,3 +33,7 @@ saved_model/**/* filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.zst filter=lfs diff=lfs merge=lfs -text
 *tfevents* filter=lfs diff=lfs merge=lfs -text
+EMAGE/test_sequences/wave16k/2_scott_0_1_1.wav filter=lfs diff=lfs merge=lfs -text
+EMAGE/test_sequences/wave16k/2_scott_0_2_2.wav filter=lfs diff=lfs merge=lfs -text
+EMAGE/test_sequences/wave16k/2_scott_0_3_3.wav filter=lfs diff=lfs merge=lfs -text
+EMAGE/test_sequences/wave16k/2_scott_0_4_4.wav filter=lfs diff=lfs merge=lfs -text
