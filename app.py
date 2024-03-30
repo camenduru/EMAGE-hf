@@ -410,7 +410,7 @@ class BaseTrainer(object):
         hf_dir = "hf"
         if not os.path.exists(args.out_path + "custom/" + hf_dir + "/"):
             os.makedirs(args.out_path + "custom/" + hf_dir + "/")
-        sf.write(args.out_path + "custom/" + hf_dir + "/tmp.wav", ap[1][:ap[0]*8], ap[0])
+        sf.write(args.out_path + "custom/" + hf_dir + "/tmp.wav", ap[1], ap[0])
         self.audio_path = args.out_path + "custom/" + hf_dir + "/tmp.wav"
         audio, ssr = librosa.load(self.audio_path)
         ap = (ssr, audio)
@@ -649,7 +649,7 @@ demo = gr.Interface(
     </div>\
     ',
     article="\
-    Due to the limited resources in this space, we process the first 8s of your uploaded audio. <br/>\
+    Due to the limited resources in this space, we process the first 60s of your uploaded audio. <br/>\
     Try to develop this space locally for longer motion generation, e.g., 60s. <br/>\
     Relevant links: [Project Page (https://pantomatrix.github.io/EMAGE/)\
     ",
