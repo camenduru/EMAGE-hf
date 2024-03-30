@@ -649,9 +649,7 @@ demo = gr.Interface(
     </div>\
     ',
     article="\
-    Due to the limited resources in this space, we process the first 60s of your uploaded audio. <br/>\
-    Try to develop this space locally for longer motion generation, e.g., 60s. <br/>\
-    Relevant links: [Project Page (https://pantomatrix.github.io/EMAGE/)\
+    Due to the limited resources in this space, we process the first 60s of your uploaded audio，try to develop this space locally for longer motion generation, [Project Page](https://pantomatrix.github.io/EMAGE/)\
     ",
     examples=examples,
 )
