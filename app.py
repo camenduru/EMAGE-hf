@@ -584,9 +584,18 @@ class BaseTrainer(object):
                 )
         
             total_length += n
-            render_vid_path = other_tools_hf.render_one_sequence_no_gt(
-            results_save_path+"res_"+test_seq_list.iloc[its]['id']+'.npz', 
-                    # results_save_path+"gt_"+test_seq_list.iloc[its]['id']+'.npz', 
+            # render_vid_path = other_tools_hf.render_one_sequence_no_gt(
+            # results_save_path+"res_"+test_seq_list.iloc[its]['id']+'.npz', 
+            #         # results_save_path+"gt_"+test_seq_list.iloc[its]['id']+'.npz', 
+            #         results_save_path,
+            #         self.audio_path,
+            #         self.args.data_path_1+"smplx_models/",
+            #         use_matplotlib = False,
+            #         args = self.args,
+            #         )
+            render_vid_path = other_tools_hf.render_one_sequence_with_face(
+                    results_save_path+"res_"+test_seq_list.iloc[its]['id']+'.npz',
+                    results_save_path+"gt_"+test_seq_list.iloc[its]['id']+'.npz',
                     results_save_path,
                     self.audio_path,
                     self.args.data_path_1+"smplx_models/",
