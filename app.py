@@ -666,4 +666,4 @@ if __name__ == "__main__":
     os.environ["MASTER_ADDR"]='127.0.0.1'
     os.environ["MASTER_PORT"]='8675'
     #os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
-    demo.launch(share=True)
+    demo.queue().launch(share=True)
