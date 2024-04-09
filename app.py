@@ -1,4 +1,3 @@
-import spaces
 import os
 # os.system("Xvfb :99 -ac &")
 # os.environ["DISPLAY"] = ":99"
@@ -45,7 +44,6 @@ def inverse_selection_tensor(filtered_t, selection_array, n):
         original_shape_t[i, selected_indices] = filtered_t[i]
     return original_shape_t
 
-@spaces.GPU(duration=120) 
 def test_demo_gpu(
     model, vq_model_face, vq_model_upper, vq_model_hands, vq_model_lower, global_motion, smplx_model,
     dict_data,
@@ -658,7 +656,7 @@ demo = gr.Interface(
     </div>\
     ',
     article="\
-    Due to the limited resources in this space, we process the first 60s of your uploaded audio，try to develop this space locally for longer motion generation, [Project Page](https://pantomatrix.github.io/EMAGE/)\
+    [Project Page](https://pantomatrix.github.io/EMAGE/)\
     ",
     examples=examples,
 )
